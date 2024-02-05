@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
   padding: 30px 150px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   border-radius: 10px;
 }
@@ -62,7 +62,8 @@ h1 {
     } */
 
 img {
-  width: 150px;
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
 }
 
