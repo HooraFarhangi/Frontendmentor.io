@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: rgb(76, 75, 75);
+}
+body {
+  font-family: Outfit;
+  background-color: #f8f9fa;
+}
+.container {
+  background-color: #f8f9fa;
+  margin: 0 auto;
+  padding: 30px 150px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  /* background-color: #66d9e8; */
+  /* background-color: #0093e9; */
+  background-color: #0756df;
+  background-image: linear-gradient(
+    160deg,
+    #0756df 0%,
+    #45b5e9 33%,
+    #80d0c7 66%,
+    #daeeec 100%
+  );
+
+  /* filter: blur(1px); */
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  color: white;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.challenge {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 10px;
+  /* box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.203); */
+
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+
+  filter: drop-shadow(0 0 0.75rem rgba(75, 80, 83, 0.15));
+  border: 1px solid white;
+}
+
+/* .challenge:hover {
+      cursor: pointer;
+      border: 1px solid #dee2e6;
+    } */
+
+img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.btn {
+  cursor: pointer;
+
+  background-color: #3bc9db;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.04rem;
+  font-size: 12px;
+}
+
+.btn:hover {
+  background-color: #66d9e8;
+}
