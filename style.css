@@ -1,19 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   color: rgb(76, 75, 75);
 }
+
 body {
   font-family: Outfit;
   background-color: #f8f9fa;
 }
+
 .container {
   background-color: #f8f9fa;
   margin: 0 auto;
-  padding: 30px 150px;
+  padding: 3rem 6rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  row-gap: 4rem;
   border-radius: 10px;
 }
 
@@ -30,12 +38,13 @@ h1 {
   );
 
   /* filter: blur(1px); */
-  padding: 30px;
+  font-size: 3.2rem;
+  padding: 3rem;
   text-align: center;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
   color: white;
-  letter-spacing: 0.08rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -44,8 +53,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  gap: 30px;
+  padding: 2rem 0;
+  gap: 1.4rem;
   border-radius: 10px;
   /* box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.203); */
 
@@ -54,35 +63,76 @@ h1 {
 
   filter: drop-shadow(0 0 0.75rem rgba(75, 80, 83, 0.15));
   border: 1px solid white;
+  transition: all 0.5s;
 }
 
-/* .challenge:hover {
-      cursor: pointer;
-      border: 1px solid #dee2e6;
-    } */
+.challenge:hover {
+  transform: translateY(-1rem);
+}
 
 img {
-  width: 300px;
-  height: 200px;
+  width: 88%;
   border-radius: 10px;
 }
 
-.btn {
-  cursor: pointer;
-
-  background-color: #3bc9db;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 25px;
+.challenge-title {
+  font-size: 1.6rem;
 }
-a {
+
+.btn:link,
+.btn:visited {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  letter-spacing: 0.04rem;
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+
+  background-color: #3bc9db;
+  width: 88%;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-color: #66d9e8;
 }
 
-.btn:hover {
-  background-color: #66d9e8;
+/*******************************/
+/*  BELOW 1200px (Landscape tablets)*/
+/*******************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*******************************/
+/*  BELOW 944px (Tablets)*/
+/*******************************/
+@media (max-width: 59em) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*******************************/
+/*  BELOW 704px (Smaller tablets)*/
+/*******************************/
+@media (max-width: 44em) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*******************************/
+/*  BELOW 544px (Phones)*/
+/*******************************/
+@media (max-width: 34em) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1.5rem 3rem;
+  }
 }
