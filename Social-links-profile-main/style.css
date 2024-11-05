@@ -13,12 +13,18 @@ body {
   font-size: 1.4rem;
   background-color: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 100%);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-container {
   background-color: hsl(0, 0%, 12%);
   width: 32rem;
-  margin: 14rem auto;
+  margin: 10rem auto;
   margin-bottom: 4rem;
   border-radius: 10px;
   display: flex;
